@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmojiSlots Arcade Machine</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎰</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="arcade-cabinet">
+    <header class="arcade-header">
+      <h1>EMOJISLOTS</h1>
+      <p class="subtitle">Match 3 to Win +100 Jackpot!</p>
+    </header>
+
+    <section class="scoreboard">
+      <div class="score-box">
+        <span class="label">CREDITS</span>
+        <span id="score-display" class="value">100</span>
+      </div>
+      <div class="score-box">
+        <span class="label">SPIN COST</span>
+        <span class="value">10</span>
+      </div>
+    </section>
+
+    <section class="reels-window" aria-label="Slot Machine Reels">
+      <div id="reel-1" class="reel">🍒</div>
+      <div id="reel-2" class="reel">🍋</div>
+      <div id="reel-3" class="reel">💎</div>
+    </section>
+
+    <div id="status-banner" class="status-banner" aria-live="polite">
+      Press SPIN to test your luck!
+    </div>
+
+    <div class="controls">
+      <button id="spin-btn" class="spin-btn" type="button">SPIN (-10)</button>
+      <button id="reset-btn" class="reset-btn hidden" type="button">Insert Coin (Reset to 100)</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
